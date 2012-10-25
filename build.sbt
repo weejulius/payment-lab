@@ -11,6 +11,7 @@ scalaVersion := "2.10.0-RC1"
  resolvers ++= Seq("snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
                      "releases" at "http://oss.sonatype.org/content/repositories/releases")
 
+externalResolvers ++= Seq("local repository" at "file:///home/wee/.m2/repository")
 
  libraryDependencies ++= Seq(
     "org.specs2" %% "specs2" % "1.13-SNAPSHOT" % "test"
@@ -21,9 +22,13 @@ scalaVersion := "2.10.0-RC1"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.0.M4" % "test" cross CrossVersion.full
 
-libraryDependencies += "info.cukes" % "cucumber-junit" % "1.0.14" % "test" 
+libraryDependencies += "info.cukes" % "cucumber-core" % "1.1.0" % "test" 
 
-libraryDependencies += "info.cukes" % "cucumber-scala" % "1.0.14" % "test" 
+libraryDependencies += "info.cukes" % "cucumber-junit" % "1.1.0" % "test" 
+
+libraryDependencies += "info.cukes" % "cucumber-junit" % "1.1.0" % "test" 
+
+libraryDependencies += "info.cukes" % "cucumber-scala" % "1.1.0" % "test" 
 
 libraryDependencies += "org.scala-lang" % "scala-compiler" % "2.10.0-RC1" % "test"  
 
@@ -34,7 +39,3 @@ libraryDependencies += "org.scala-lang" % "scala-library" % "2.10.0-RC1" % "test
  cucumberStepsBasePackage := "test"
 
  cucumberHtmlReport := true
-
- cucumberJunitReport := true
-
- cucumberJsonReport := true

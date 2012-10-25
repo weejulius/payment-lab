@@ -1,7 +1,7 @@
 package com.thenetcircle.services
 
-import cucumber.runtime.{ EN, ScalaDsl }
 import org.scalatest.matchers.ShouldMatchers
+import cucumber.api.scala.{ScalaDsl, EN}
 
 class OrderSteps extends ScalaDsl with EN with ShouldMatchers {
 
