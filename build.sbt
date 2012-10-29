@@ -22,13 +22,13 @@ externalResolvers ++= Seq("local repository" at "file:///home/wee/.m2/repository
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.0.M4" % "test" cross CrossVersion.full
 
-libraryDependencies += "info.cukes" % "cucumber-core" % "1.1.0" % "test" 
+libraryDependencies += "info.cukes" % "cucumber-core" % "1.1.1" % "test" 
 
-libraryDependencies += "info.cukes" % "cucumber-junit" % "1.1.0" % "test" 
+libraryDependencies += "info.cukes" % "cucumber-junit" % "1.1.1" % "test" 
 
-libraryDependencies += "info.cukes" % "cucumber-junit" % "1.1.0" % "test" 
+libraryDependencies += "info.cukes" % "cucumber-scala" % "1.1.1" % "test" 
 
-libraryDependencies += "info.cukes" % "cucumber-scala" % "1.1.0" % "test" 
+libraryDependencies += "junit" % "junit" % "4.10" % "test" 
 
 libraryDependencies += "org.scala-lang" % "scala-compiler" % "2.10.0-RC1" % "test"  
 

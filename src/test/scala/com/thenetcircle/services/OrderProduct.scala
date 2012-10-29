@@ -1,8 +1,6 @@
 package com.thenetcircle.services
 
-
 import org.junit.runner.RunWith
-import cucumber.junit.Cucumber
-
+import cucumber.api.junit.Cucumber
 @RunWith(classOf[Cucumber])
-class OrderProductSpec
+class OrderProduct
