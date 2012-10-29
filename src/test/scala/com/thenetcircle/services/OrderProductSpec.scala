@@ -19,8 +19,8 @@ class OrderProductSpec extends Specification {
     def extract(name: String) = extract1(name)
   }
 
-  object generateId extends When[String, String] {
-    def extract(name: String, text: String) = "1"
+  object generateId extends When[String, String] {asdasd
+    def extract(name: String, text: String) = "2"
   }
 
   object result extends Then[String] {
